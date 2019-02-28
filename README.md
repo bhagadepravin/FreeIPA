@@ -5,11 +5,11 @@ yum install -y ipa-server bind bind-dyndb-ldap bind-utils vim ipa-server-dns bin
 
 systemctl start rngd && systemctl enable rngd && systemctl status rngd
 
-# Add node to freeipa
+#Add node to freeipa
 
 yum install ipa-client -y
 
-# Update the resolv conf file with nameservice as freeipa ip address
+##Update the resolv conf file with nameservice as freeipa ip address
 
 ipa-client-install --uninstall
 
