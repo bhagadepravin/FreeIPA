@@ -28,6 +28,8 @@
 
 `# pssh -h pssh-hosts -l root -A -i "cat /etc/resolv.conf"`
 
+`# pssh -h pssh-hosts -l root -A -i "echo "172.26.81.236 pbhagade-freeipa.openstacklocal" >> /etc/hosts"`
+
 
 `# yum install ipa-client -y`
 
