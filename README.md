@@ -6,7 +6,7 @@
 
 `# yum install ipa-server ipa-server-dns -y`
 
-* Example 1
+`# ipa-server-install --setup-dns`
 ```
 ipa-server-install --realm=BEER.MYDOMAIN.COM --domain=beer.mydomain.com \
     --ds-password=$UNBREAKABLE_PASSWORD --admin-password=$UNBREAKABLE_PASSWORD \
@@ -14,16 +14,6 @@ ipa-server-install --realm=BEER.MYDOMAIN.COM --domain=beer.mydomain.com \
     --idstart=1001 --idmax=10000000 \
     --setup-dns --no-forwarders \
     --reverse-zone=1.199.in-addr.arpa --allow-zone-overlap
-```
-
-* Example 2
-
-```
-ipa-client-install --domain=squadron-labs.com \
-    --server=c274-node4.squadron-labs.com \
-    --realm=SQUADRON-LABS.COM \
-    --principal=admin@SQUADRON-LABS.COM \
-    --enable-dns-updates
 ```
 
 ###### Add node to freeipa
