@@ -1,5 +1,6 @@
 # FreeIPA Cheatsheet 
  ###Pssh – Execute Commands on Multiple Remote Linux Servers Using Single Terminal
+ 
  `# yum install python-pip -y`
  `# pip install pssh`
 * To read hosts file, include the -h host_file-name or –hosts host_file_name option.
