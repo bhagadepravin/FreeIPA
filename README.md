@@ -2,7 +2,9 @@
  ###Pssh – Execute Commands on Multiple Remote Linux Servers Using Single Terminal
  
  `# yum install python-pip -y`
+ 
  `# pip install pssh`
+
 * To read hosts file, include the -h host_file-name or –hosts host_file_name option.
 * To include a default username on all hosts that do not define a specific user, use the -l username or –user username option.
 * You can also display standard output and standard error as each host completes. By using the -i or –inline option.
