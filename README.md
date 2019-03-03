@@ -20,11 +20,14 @@
 
 `# pssh -h pssh-hosts -l root -A -i "uptime"`
 
+`# pssh -h pssh-hosts -l root -A -i "yum update -y"`
+
+`# pssh -h pssh-hosts -l root -A -i "yum install ipa-client -y"`
+
 `# pssh -h pssh-hosts -l root -A -i "echo "nameserver 172.26.81.236" > /etc/resolv.conf"`
 
 `# pssh -h pssh-hosts -l root -A -i "cat /etc/resolv.conf"`
 
-`# pssh -h pssh-hosts -l root -A -i "yum install ipa-client -y"`
 
 `# yum install ipa-client -y`
 
