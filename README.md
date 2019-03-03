@@ -6,6 +6,15 @@
 
 `# yum install ipa-server ipa-server-dns -y`
 
+```
+ipa-server-install --realm=BEER.MYDOMAIN.COM --domain=beer.mydomain.com \
+    --ds-password=$UNBREAKABLE_PASSWORD --admin-password=$UNBREAKABLE_PASSWORD \
+    --hostname=freebeer.beer.mydomain.com --ip-address=199.1.x.x \
+    --idstart=1001 --idmax=10000000 \
+    --setup-dns --no-forwarders \
+    --reverse-zone=1.199.in-addr.arpa --allow-zone-overlap
+```
+
 ###### Add node to freeipa
 
  ###### Pssh – Execute Commands on Multiple Remote Linux Servers Using Single Terminal
@@ -37,6 +46,10 @@
 `# ipa-client-install --uninstall`
 
 `# ipa-client-install --domain=squadron-labs.com --server=c274-node4.squadron-labs.com  --realm=SQUADRON-LABS.COM --principal=admin@SQUADRON-LABS.COM --enable-dns-updates`
+
+```
+ipa-client-install -p admin -w $UNBREAKABLE_PASSWORD --ip-address 199.1.x.x
+```
 
 `# pssh -h pssh-hosts -l root -A -i "yum clean all && yum update all"`
 
