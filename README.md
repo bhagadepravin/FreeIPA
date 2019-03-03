@@ -40,5 +40,6 @@
 
 `# pssh -h pssh-hosts -l root -A -i "yum clean all && yum update all"`
 
-Execute below cmd, if ambari server version is less than 2.6.x
+ * Execute below cmd, if ambari server version is less than 2.6.x
+
 `# ipa group-add ambari-managed-principals`
