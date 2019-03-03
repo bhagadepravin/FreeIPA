@@ -6,7 +6,7 @@
 
 `# yum install ipa-server ipa-server-dns -y`
 
-## Add node to freeipa
+###### Add node to freeipa
 
  ###### Pssh – Execute Commands on Multiple Remote Linux Servers Using Single Terminal
  
@@ -24,7 +24,7 @@
 
 `# pssh -h pssh-hosts -l root -A -i "yum install ipa-client -y"`
 
- ####### Configure the HDP nodes to use the FreeIPA server for DNS resolution:
+ ###### Configure the HDP nodes to use the FreeIPA server for DNS resolution:
 
 `# pssh -h pssh-hosts -l root -A -i "echo "nameserver $ipaserver_ip_address" > /etc/resolv.conf"`
 
@@ -32,7 +32,7 @@
 
 `# pssh -h pssh-hosts -l root -A -i "echo "172.26.81.236 pbhagade-freeipa.openstacklocal" >> /etc/hosts"`
 
-#### Update the resolv conf file with nameservice as freeipa ip address
+###### Update the resolv conf file with nameservice as freeipa ip address
 
 `# ipa-client-install --uninstall`
 
