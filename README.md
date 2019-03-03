@@ -51,3 +51,12 @@ Support for FreeIPA is not enabled by default in Ambari. You must enable the exp
 http://ambariserver.example.domain.com:8080/#/experimental
 
 https://community.hortonworks.com/articles/59645/ambari-24-kerberos-with-freeipa.html
+
+### Howto/DNS classless IN-ADDR.ARPA delegation
+
+```
+ipa dnszone-add 42.25.172.in-addr.arpa.
+ipa dnszone-add 43.25.172.in-addr.arpa.
+```
+
+Ref: https://www.freeipa.org/page/Howto/DNS_classless_IN-ADDR.ARPA_delegation
