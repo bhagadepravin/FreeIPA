@@ -43,3 +43,11 @@
  * Execute below cmd, if ambari server version is less than 2.6.x
 
 `# ipa group-add ambari-managed-principals`
+
+
+#### Enable Experimental FreeIPA Support
+Support for FreeIPA is not enabled by default in Ambari. You must enable the experimental functionality in Ambari before you can select FreeIPA as an option in the Kerberos wizard. In a browser, navigate to:
+
+http://ambariserver.example.domain.com:8080/#/experimental
+
+https://community.hortonworks.com/articles/59645/ambari-24-kerberos-with-freeipa.html
